@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_id_me/home.dart';
+import 'package:food_id_me/page/home/home_page.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -7,10 +7,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: const Home(),
+      home: const HomePage(),
     );
   }
 }

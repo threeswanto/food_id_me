@@ -6,7 +6,7 @@ import 'package:food_id_me/model/response.dart';
 import 'package:http/http.dart' as http;
 
 class ResponseRepository {
-  void doGetBanner(String token, onSuccess, onError) async {
+  void doGetBanner(onSuccess, onError) async {
     try {
       var url = APIEndpoint.baseUrl + APIEndpoint.banner;
       var uri = Uri.parse(url);
